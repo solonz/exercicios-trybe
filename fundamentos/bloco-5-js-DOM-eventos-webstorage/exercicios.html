@@ -57,11 +57,21 @@
  Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
  Crie uma função que exiba o conteúdo de todas as tags <p> no console.
         */
-        function exercicio1(comoSeVe) {
-            document.getElementsByClassName('center-content') = comoSeVe);
+        function exercicio1(novoTexto) {
+            return document.getElementsByClassName('center-content')[0].innerText = novoTexto;
         }
-        return (exercicio1('daqui a 2 anos eu me vejo milionário'));
-        console.log(exercicio1)
+        exercicio1('milionário em 2 anos simmmmm!!!')
+
+        function mudaCor(novaCor) {
+            return document.getElementsByClassName('main-content')[0].style.backgroundColor = novaCor;
+        }
+        mudaCor('rgb(76,164,109)')
+
+        function mudaCor2(novaCor2) {
+            return document.getElementsByTagName('section')[0].style.backgroundColor = novaCor2;
+        }
+        mudaCor2('white')
+
     </script>
 </body>
 
